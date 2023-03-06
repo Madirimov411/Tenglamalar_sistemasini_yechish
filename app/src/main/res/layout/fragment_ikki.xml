@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".IkkiFragment">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_margin="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_back"/>
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:background="@drawable/et_back"
+                android:id="@+id/et1Had"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" * x^2"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:background="@drawable/et_back"
+                android:id="@+id/et2Had"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" * x"
+                android:textSize="20sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:textSize="20sp"
+                android:background="@drawable/et_back"
+                android:id="@+id/et3Had"
+                android:gravity="center"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Oraliqni kiriting:   "
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="a = "
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:background="@drawable/et_back"
+            android:id="@+id/oraliq1"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="; b = "
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:textSize="20sp"
+            android:background="@drawable/et_back"
+            android:id="@+id/oraliq2"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hisoblash"
+        android:id="@+id/btnHisobash"
+        android:layout_marginHorizontal="70dp"/>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Javob:   "
+            android:gravity="end"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Natija"
+            android:textColor="#4CAF50"
+            android:textSize="17sp"
+            android:id="@+id/tvNatija"/>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

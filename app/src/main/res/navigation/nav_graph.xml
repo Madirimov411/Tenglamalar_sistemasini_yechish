@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.uzb7.tenglamalarsistemasiniyechish.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_ikkiFragment2"
+            app:destination="@id/ikkiFragment2" />
+        <action
+            android:id="@+id/action_homeFragment_to_uchFragment"
+            app:destination="@id/uchFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_tortFragment"
+            app:destination="@id/tortFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ikkiFragment2"
+        android:name="com.uzb7.tenglamalarsistemasiniyechish.IkkiFragment"
+        android:label="fragment_ikki"
+        tools:layout="@layout/fragment_ikki" >
+        <action
+            android:id="@+id/action_ikkiFragment2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/uchFragment"
+        android:name="com.uzb7.tenglamalarsistemasiniyechish.UchFragment"
+        android:label="fragment_uch"
+        tools:layout="@layout/fragment_uch" >
+        <action
+            android:id="@+id/action_uchFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tortFragment"
+        android:name="com.uzb7.tenglamalarsistemasiniyechish.TortFragment"
+        android:label="fragment_tort"
+        tools:layout="@layout/fragment_tort" >
+        <action
+            android:id="@+id/action_tortFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+</navigation>
